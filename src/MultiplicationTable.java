@@ -1,9 +1,17 @@
 package src;
 
 public class MultiplicationTable {
+    void print() {
+        print(6);
+    }
+
     void print(int x) {
-        for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d * %d = %d", 5, x, x * 5).println();
+        print(x, 1, 10);
+    }
+
+    void print(int table, int from, int to) {
+        for (int i = from; i <= to; i++) {
+            System.out.printf("%d * %d = %d", table, i, table * i).println();
         }
     }
 }
